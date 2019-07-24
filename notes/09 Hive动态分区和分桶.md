@@ -62,6 +62,8 @@
 --TABLESAMPLE语法：
 	TABLESAMPLE(BUCKET x OUT OF y)
 		x：表示从哪个bucket开始抽取数据
-		y：必须为该表总bucket数的倍数或因子
+		y：必须为该表总bucket数的倍数或因子 
+		从第x个桶取数据，取（桶个数/y）的数据
+			
 ```
 
