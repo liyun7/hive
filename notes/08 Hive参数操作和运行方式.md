@@ -72,6 +72,9 @@
 ##### 	3、hive脚本运行方式
 
 ```sql
+--hive给变量赋值，执行sql命令时，可以直接使用变量
+	hive -d abc=1
+	select * fron psn where id=${abc}
 --hive直接执行sql命令，可以写一个sql语句，也可以使用;分割写多个sql语句
 	hive -e ""
 --hive执行sql命令，将sql语句执行的结果重定向到某一个文件中
