@@ -57,7 +57,8 @@ LATERAL VIEW explode(address) myTable2 AS myCol2, myCol3;
 ```sql
 --创建索引：
 	create index t1_index on table psn2(name) 
-	as 'org.apache.hadoop.hive.ql.index.compact.CompactIndexHandler' with deferred rebuild in table t1_index_table;
+	as 'org.apache.hadoop.hive.ql.index.compact.CompactIndexHandler' with deferred rebuild
+	in table t1_index_table;
 --as：指定索引器；
 --in table：指定索引表，若不指定默认生成在default__psn2_t1_index__表中
 	create index t1_index on table psn2(name) 
