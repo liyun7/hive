@@ -65,6 +65,8 @@ SET ROLE (role_name|ALL|NONE);
 SHOW CURRENT ROLES;  
 -- 查看所有存在的角色
 SHOW ROLES;  
+-- 查看角色的权限
+SHOW ROLE GRANT ROLE role_name;
 ```
 
 ##### 6、Hive权限分配图
