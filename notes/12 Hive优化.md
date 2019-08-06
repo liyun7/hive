@@ -129,7 +129,7 @@ hive.groupby.mapaggr.checkinterval：
 hive.map.aggr.hash.min.reduction： 
 --map端聚合使用的内存的最大值
 hive.map.aggr.hash.percentmemory： 
---是否对GroupBy产生的数据倾斜做优化，默认为false
+--是否对GroupBy产生的数据倾斜做优化，默认为false,一般设置为true
 hive.groupby.skewindata
 ```
 
