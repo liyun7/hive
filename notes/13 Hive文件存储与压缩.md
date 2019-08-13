@@ -104,9 +104,9 @@ ORC和PARQUET是基于列式存储的。
 
 ![orc文件格式](https://github.com/msbbigdata/hive/blob/master/images/orc%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F.png)
 
-   		1）Index Data：一个轻量级的index，默认是每隔1W行做一个索引。这里做的索引应该只是记录某行的各字段在Row Data中的offset。
+​   	   1）Index Data：一个轻量级的index，默认是每隔1W行做一个索引。这里做的索引应该只是记录某行的各字段在Row Data中的offset。
 
-   		2）Row Data：存的是具体的数据，先取部分行，然后对这些行按列进行存储。对每个列进行了编码，分成多个Stream来存储。
+​   	   2）Row Data：存的是具体的数据，先取部分行，然后对这些行按列进行存储。对每个列进行了编码，分成多个Stream来存储。
 
 ​    	   3）Stripe Footer：存的是各个Stream的类型，长度等信息。
 
