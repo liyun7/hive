@@ -39,7 +39,7 @@
 | zookeeper       | 1      | 1      | 1      |        |
 | resourcemanager |        | 1      | 1      | 1      |
 | nodemanager     |        | 1      | 1      | 1      |
-| Hiveserver2     |        |        | 1      |        |
+| Hiveserver2     |        |   1    |        |   1    |
 | beeline         |        |        |        | 1      |
 
 **2、node02—hive-site.xml**
