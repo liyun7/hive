@@ -145,6 +145,8 @@ set hive.merge.mapfiles=true
 set hive.merge.mapredfiles=true;
 --合并文件的大小：
 set hive.merge.size.per.task=256*1000*1000
+--去重统计
+由于count distinct需要用一个reduce task来完成，数据量大的情况下，会导致整个job很难完成，一般count distinct使用先group by再count方式转换
 ```
 
 ### 10、合理设置Map以及Reduce的数量
